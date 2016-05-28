@@ -1,0 +1,526 @@
+::-webkit-scrollbar {
+    background-color: #FBF8E7;
+    width: .4em;
+    height: .4em;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+::-webkit-scrollbar-thumb {
+  width: .4em;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.4);
+  background-color: #ABD0F1;
+  outline: 1px solid slategrey;
+  border-radius:  .2em;
+}
+body{
+    background-color: #EDD8A9; 
+    font-size: 16px;
+    font-family: 'Slabo 27px', serif;
+}
+.iconImg{
+    vertical-align: inherit;
+    height: 100%;
+    width: 100%;
+}
+#mapImg{
+    width: 100%;
+}
+#bottom{    
+}
+#headerAdjuster{
+    z-index : 4;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    -webkit-transition: width 1.2s; /* For Safari 3.1 to 6.0 */
+    transition: width 1.2s;
+}
+#adjuster{
+    z-index: 2;
+    position: fixed;
+    left: 0px;
+    top: 8em;
+    overflow: auto;
+    //border: .2em solid #E87162; 
+    -webkit-transition: width 1.2s, height 1.2; /* For Safari 3.1 to 6.0 */
+    transition: width 1.2s, height 1.2s;
+ 
+}
+.notransition{
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  -ms-transition: none !important;
+  transition: none !important;
+}
+    
+}
+#planting{
+    position: relative;
+    padding: 1em;
+    padding-top: 0em;
+    -webkit-transition: width 1.5s, height 1.5s; /* For Safari 3.1 to 6.0 */
+    transition: width 1.5s, height 1.5s;
+}
+
+#header{
+    z-index: 1;
+    top: 0em;
+    color: #FBF8E7;
+    position: absolute;
+    width: 100%;
+    height: 8em;
+    background-color: #66BBAE;
+    
+}
+/*
+#headerImgCon{
+	min-height: 100%;  // Fallback for browsers do NOT support vh unit
+  
+
+  display: flex;
+  align-items: center;
+}
+*/
+#loginForm{
+    margin: 2em 0 0 0;
+}
+#headerImg{
+    width: 100%;
+    max-height: 8em;
+    max-width: 13em;	
+}
+.headerFont{
+    text-shadow: 1px 1px 1px #156357;
+   // position: relative;
+    margin-top: .3em;
+    margin-bottom: .3em;
+}
+#snowflake{
+    position: absolute;
+    font-size: 2em;
+    left: -.5em; 
+}
+#navigation{
+    margin-bottom : 0px;
+    
+}
+#dimensionsForm{
+    position: absolute;
+}
+/*
+.underHeader{
+    position: relative;
+    top: 15em;
+}
+*/
+.content{
+    position: relative;
+   // top: 14em;
+}
+.plantIcon{
+    vertical-align: top;
+    height: 2em;
+    width: 2em;
+}
+.icon{
+    margin-bottom: 1px;
+    border-radius: .3em;
+    color: #2D635A;
+    position: relative;
+    background-color: #FBF8E7;
+    border: 1px solid #66BBAE;
+    left: 0em;    
+}
+.iconheader{
+	font-size: 22px;
+	padding: 0em;
+}
+.iconDrag{
+    background-color: #66BBAE;
+}
+.water{
+    padding: .1em;
+	position: relative;
+	top: .3em;
+}
+.waterText{
+	color: black;
+	font-size:10px;
+}
+.sun{
+    font-family: 'SegoeUISymbolRegular';
+    position: absolute;
+    right: 3.4%;
+    top: .2em;
+
+}
+.iconImageContainer{
+    border-radius: .2em;
+    background-color: rgba(102, 187, 174,1);
+    height: inherit;
+  //  width: inherit;
+    padding: 0px;
+}
+.iconDataContainer{    	
+    height: inherit;
+    background-color: ;
+}
+.iconDataContainer .row{
+    height:inherit;
+}
+.iconDataColumn{
+    padding-right: 2px;
+    text-align: right;
+    height: inherit;
+    padding: .1em;
+}
+.iconbody{
+    height: 6em;
+}
+#userIconComponent{
+   
+    position: relative;
+    top: 0em;
+    left: 0em;
+}
+.iconButton{
+    position: absolute;
+    cursor: pointer; 
+}
+.deleteIcon{
+
+    right: 12%;
+    top: 13%;
+}
+.editIcon{
+
+    right: 22%;
+    top: 17%;
+}
+.sortIcon{
+    padding: 3px;
+    text-align: center;
+    right: 0px;
+    bottom: 0px;
+    border-top-left-radius: 2px;
+    border-bottom-right-radius: 2px;    
+    background-color: #2D635A;
+    width: 1em;
+}
+.dataDisplayHeading{
+    padding-right: 2px;
+    border-radius: .2em;
+    max-height: 25%;
+    background-color: #66BBAE;
+    font-weight: bolder;
+    color: #FBF8E7;
+    
+}
+.fa{
+//    cursor: pointer;
+}
+.fa-tint{
+   
+    color: #2652B9;
+}
+.fa-home{
+    color: #55BBF9;
+}
+.fa-leaf{
+    color: #76AD0E;
+}
+.glyphicon-tree-deciduous{
+    color: #AD0E23;
+}
+.template{
+    position: absolute;
+    z-index: -6;
+    opacity: 0; 
+}
+.iconDiv{
+    cursor: pointer;
+    height : 2em;
+    width: 2em;
+}
+.cloneMe{
+    z-index: 5;
+    cursor: pointer;
+    -webkit-transition: width .5s, height .5s, margin .5s, border-radius .5s, background-color .5s, opacity .5s; /* For Safari 3.1 to 6.0 */
+    transition: width .5s, height .5s, margin .5s, border-radius .5s, background-color .5s, opacity .5s;
+}
+.gardDim{
+    -webkit-transition: width 1.5s, height 1.5s; /* For Safari 3.1 to 6.0 */
+    transition: width 1.5s, height 1.5s;
+}
+.page{
+    border: solid #E87162 .1em;
+    overflow: auto;
+    background-color: #EDD8A9;
+    position: absolute;
+    -webkit-transition: height 1.2s; /* For Safari 3.1 to 6.0 */
+    transition: height 1.2s;
+}
+
+.list{
+    padding: 0px;
+    border-style: solid;
+    border-color: #E87162;    
+}
+.spacer{
+    background-color: rgba(16, 202,163,0);
+}
+.zoneButton{
+   /* border: 1px solid black;*/   
+    opacity: .2;
+    position: absolute;
+    height: 2.55%;
+    width: 15.1%;
+    right:3.5%;
+    background-color: rgba(0,0,0,0) !important;
+}
+.stage{
+    background-color: #CAE8DC;
+    height: 2.5em;
+    border: solid .1em #66BBAE;
+
+}
+
+#buttons{
+    height: 2em;
+}
+#oneEmPat{
+    stroke-width: 0.01em;
+    stroke: #FBF8E7;
+}
+#fiveEmPat{
+    stroke: #aaaaaa;
+}   
+#tenEmPat{
+    stroke-width: 0.18em;
+    stroke: #aaaaaa; 
+}
+
+#info{ 
+    //overflow: auto;
+    z-index: 4;
+    margin: 0px;
+    color: #376F66;
+    height: 12em;
+    background-color: #CAE8DC;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    border-top: solid .4em #66BBAE;
+    -webkit-transition: bottom 1.2s; /* For Safari 3.1 to 6.0 */
+    transition: bottom 1.2s;
+}
+#infoArrowCon{   
+    top:0em;
+    left: 1em;
+}
+.circle-button-icon{
+    position: absolute;
+    top: 0.25em;
+    left: 0.31em;
+    font-size: 22px;
+}
+.arrowCon{
+    font-size: 24px;
+    background-color: #66BBAE;
+    width: 1.5em;
+    height:1.5em;
+    position: absolute;
+    border-radius: .75em;
+    /*
+    -webkit-transition: transform 1.2s ease;
+    -moz-transition: transform 1.2s ease;	
+    -o-transition: transform 1.2s ease;
+    transition: transform 1.2s ease;
+    -ms-transition: transform 1.2s ease;  
+    */
+    -webkit-transition: top 1.2s, left 1.2s, right 1.2s ease; /* For Safari 3.1 to 6.0 */
+    transition: top 1.2s, left 1.2s, right 1.2s ease;
+}
+#notesLabel{
+    position: relative;
+    left: 1.8em;
+   
+}
+.infoLabel{
+    font-size: 2em;
+    height: 1.1em;
+}
+.infoText{
+    position: relative;
+    bottom: 0em;
+    overflow: auto;
+    height: 9.5em;
+}
+.fa-arrow-circle-up{
+  //  text-align: center;
+//position: relative;
+   // top: .05em;
+  //  left: .33em;
+    -webkit-transition: transform 1.2s ease;
+    -moz-transition: transform 1.2s ease;	
+    -o-transition: transform 1.2s ease;
+    transition: transform 1.2s ease;
+    -ms-transition: transform 1.2s ease;       
+}
+.fa-arrow-circle-right{
+//    text-align: center;
+    
+    -webkit-transition: transform 1.2s ease;
+    -moz-transition: transform 1.2s ease;	
+    -o-transition: transform 1.2s ease;
+    transition: transform 1.2s ease;
+    -ms-transition: transform 1.2s ease;       
+}
+.rotate-one-eighty{
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Safari */
+    transform: rotate(180deg);
+}
+
+#regionSelectPage{
+    position:absolute;
+    -webkit-transition: top 1.2s; /* For Safari 3.1 to 6.0 */
+    transition: top 1.2s;
+}
+#userPage{
+   /*overflow: auto;*/
+    border: none;
+    z-index: 4;
+    position: fixed;
+    background-color: #EDD8A9;
+    -webkit-transition: right 1.2s, height 1.2s; /* For Safari 3.1 to 6.0 */
+    transition: right 1.2s, height 1.2s;
+}
+#gardenButtons{
+    width: 100%;
+    display: table;
+}
+#stageToolbar{
+    display: table-row;
+}
+#stageToolbar > label{
+    display: table-cell;
+}
+#sowingOptions button{
+   // border: solid 1px #66BBAE;
+   // background-color: #FBF8E7;
+}
+#userList{
+    background-color: #66BBAE;
+    border: solid .2em #E87162;
+    margin: 0px;
+    overflow: auto;
+    -webkit-transition: height 1.2s; /* For Safari 3.1 to 6.0 */
+    transition: height 1.2s;
+}
+#userListLabel{
+    height: 2.5em;
+    text-align:center;
+}
+#userListLabel h2{
+    margin-top: 0px;
+}
+#userListArrowCon{
+    width:1.5em;
+    height:1.5em;
+    top: 0em;
+    left: 2%;
+}
+
+.gardenOptionsButton{
+}
+#copyButtonLabel{
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    position: absolute;
+    top: 0em;
+    right: 2%;
+}
+#hardiPage{
+    z-index: 9999994; 
+    background-color: rgba(16, 202,163,0);
+    padding: 0em;
+    position: absolute;
+   /* background-color: #EDD8A9;*/   
+}
+#hardiContent{
+    min-height: 100%;
+    background-color: #EDD8A9;
+}
+
+#plantData{
+    height: 8em;
+    overflow: auto;
+}
+
+#compInfo{
+}
+#gardDimensionsPage{
+    width: auto;
+}
+#dirtDiv{
+    position: relative;
+    background-color: #FBF8E7;
+    border: .4em solid #CAE8DC;
+    padding:0px;
+    overflow: auto;
+}
+#dirtSvg{ 
+    /*
+    position: absolute;
+    right: 1em;
+    */
+    width: 10em; 
+    background-color: #8D5B38;
+    outline:.2em solid #aaaaaa;
+}
+#dirtSvgCon{
+   // padding-right: 3em;
+   // margin: 3em;
+    position: relative;
+    width: -moz-fit-content;
+    width: -webkit-fit-content;
+    width: fit-content;
+}
+#dirtSvgMargin{
+    display: inline-block;
+    margin: 3em;
+    width: -moz-fit-content;
+    width: -webkit-fit-content;
+    width: fit-content;
+}
+#paletteSvg{
+    outline:.2em solid #aaaaaa;
+}
+#paletteDiv{
+    display: none;
+    border: .4em solid #7490A9;
+    padding-top: 1em;
+    overflow: hidden;
+    height: 20em;
+}
+button{
+ //   height: inherit;   
+ //   background-color: #CAE8DC;
+}
+/*
+th, td{
+    border: .1em solid #CAE8DC;
+    max-height: 30px;
+}
+table{
+    background-color: #FBF8E7;
+    border: .3em solid #66BBAE;
+    width: 100%;
+}
+*/

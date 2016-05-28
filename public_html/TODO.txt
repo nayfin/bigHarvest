@@ -1,0 +1,12 @@
+ TODO
+ 
+ -first/last frost counter in header
+ -icons 
+    sun
+    water
+ -region overflow
+ -notes page
+ -notes column for each plant
+ -rant and survey
+ -can see any garden? allow to edit
+ -develop look of plant tables
