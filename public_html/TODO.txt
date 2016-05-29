@@ -1,12 +1,7 @@
  TODO
  
- -first/last frost counter in header
- -icons 
-    sun
-    water
- -region overflow
- -notes page
- -notes column for each plant
- -rant and survey
- -can see any garden? allow to edit
- -develop look of plant tables
+-Start Over!
+-Learn more AngularJS, learn Node.js
+-Markup HTML using Material Angular
+-Make "Garden Preparation" page to practice basics and theming
+-
